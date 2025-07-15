@@ -1,0 +1,23 @@
+# Ignore Python virtual environments
+venv/
+.venv/
+.venv
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# VSCode settings
+.vscode/
+
+# macOS and Linux
+.DS_Store
