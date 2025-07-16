@@ -20,4 +20,4 @@ for i, c in enumerate(comments[:3]):
 
 print(f"\nPosts: {len(posts)}")
 for i, p in enumerate(posts[:3]):
-    print(f"\n[Post {i+1}]\n{p['posts']}\n→ {p['permalink']}")
+    print(f"\n[Post {i+1}]\n{p['text']}\n→ {p['permalink']}")

@@ -33,7 +33,7 @@ def get_user_data(username : str ,limit=1000) :
     posts = []
     for post in redditor.submissions.new(limit=limit) :
         posts.append({
-            "posts" : (post.title or "") + "\n" + (post.selftext or ""),
+            "text" : (post.title or "") + "\n" + (post.selftext or ""),
             "permalink" : f"https://www.reddit.com{post.permalink}"
         })
     return comments, posts
