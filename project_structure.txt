@@ -32,3 +32,11 @@ reddit_persona_project/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+
+
+
+Module	Function	Trait Type
+fact_prompt.py	build_fact_prompt()	Name, Age, Job
+description_prompt.py	build_description_prompt()	Descriptive & open traits
+motivation_prompt.py	build_motivation_prompt()	Rating traits (1–10)
+personality_prompt.py	build_personality_prompt()	MBTI style
