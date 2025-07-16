@@ -1,7 +1,6 @@
-# Ignore Python virtual environments
-venv/
+# Python virtual environments
 .venv/
-.venv
+venv/
 
 # Byte-compiled / cache files
 __pycache__/
@@ -13,11 +12,18 @@ __pycache__/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Environment variables
+# Environment variable files
 .env
+.env.*
 
-# VSCode settings
+# VS Code settings
 .vscode/
 
-# macOS and Linux
+# OS-specific files
 .DS_Store
+Thumbs.db
+
+# Log or temporary files
+*.log
+*.tmp
+*.bak
