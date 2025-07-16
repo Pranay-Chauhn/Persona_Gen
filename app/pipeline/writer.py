@@ -1,6 +1,6 @@
 import json 
 import os
-def save_persona(persona_dict, output_dir = "D:\Projects\Persona_Gen\app\outputs") :
+def save_persona(persona_dict, output_dir = "D:\\Projects\\Persona_Gen\\app\\outputs") :
     os.makedirs(output_dir,exist_ok=True)
 
     # Save json 
