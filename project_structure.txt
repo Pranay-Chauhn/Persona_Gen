@@ -1,0 +1,34 @@
+reddit_persona_project/
+│
+├── app/
+│   ├── main.py                          # Entry point to run everything
+│   ├── config.py                        # Env vars, model paths, constants
+│   ├── pipeline/
+│   │   ├── controller.py                # Orchestrates hybrid workflow
+│   │   ├── loader.py                    # Load Reddit user data
+│   │   ├── writer.py                    # Format & save final persona
+│   │   └── chunker.py                   # Text chunking logic
+│   │
+│   ├── models/
+│   │   ├── prompts/
+│   │   │   ├── fact_prompt.py           # Prompts for direct traits
+│   │   │   ├── description_prompt.py    # 4-word, habits, frustrations
+│   │   │   ├── motivation_prompt.py     # Motivation parameter ratings
+│   │   │   └── personality_prompt.py    # MBTI trait extractor
+│   │   │
+│   │   └── chains/
+│   │       ├── fact_chain.py            # LLMChain + RAG
+│   │       ├── summary_chain.py         # MapReduceDocumentsChain
+│   │       ├── refine_chain.py          # RefineDocumentsChain
+│   │       └── runner.py                # Runs each chain per trait group
+│   │
+│   ├── outputs/
+│   │   ├── user_data.txt                # Combined posts + comments
+│   │   ├── user_persona.json            # Final structured result
+│   │   └── user_persona.txt             # Human-readable version
+│   │
+│   └── .env                             # Your API keys, model configs
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
