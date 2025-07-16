@@ -21,7 +21,7 @@ How to Set Up and Run:
 ------------------------
 Download the repository or use the command:
 
-    git clone https://github.com/your-username/reddit-persona-generator.git
+    git clone https://github.com/Pranay-Chauhn/Persona_Gen
     cd reddit-persona-generator
 
 2. Create and Activate Virtual Environment:
