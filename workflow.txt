@@ -1,0 +1,47 @@
+✅ Assignment Objective
+Given a Reddit user profile URL, extract their posts and comments, 
+analyze them using LLM, and generate a text-based user persona (with source citations).
+
+✅ Workflow Diagram
+Here’s a figure format workflow for your assignment:
+┌────────────────────────────┐
+│ 1. Input: Reddit User URL  │
+└────────────┬───────────────┘
+             ↓
+┌────────────────────────────┐
+│ 2. Scrape Reddit Posts &   │
+│    Comments (Pushshift API,│
+│    Reddit API, or PRAW)    │
+└────────────┬───────────────┘
+             ↓
+┌────────────────────────────┐
+│ 3. Preprocess and Chunk    │
+│    Reddit Text             │
+└────────────┬───────────────┘
+             ↓
+┌────────────────────────────┐
+│ 4. Analyze with LLM (e.g., │
+│    OpenAI/GPT-4 or Claude) │
+│    → Extract Traits        │
+└────────────┬───────────────┘
+             ↓
+┌────────────────────────────┐
+│ 5. Generate User Persona   │
+│    Text (Age, Interests,   │
+│    Tone, Occupation, etc.)│
+└────────────┬───────────────┘
+             ↓
+┌────────────────────────────┐
+│ 6. Cite Source Posts/      │
+│    Comments per Trait      │
+└────────────┬───────────────┘
+             ↓
+┌────────────────────────────┐
+│ 7. Save Output to .txt File│
+│    (Per Reddit Profile)    │
+└────────────┬───────────────┘
+             ↓
+┌────────────────────────────┐
+│ 8. GitHub Repo with Script │
+│    + README + Output Files │
+└────────────────────────────┘
