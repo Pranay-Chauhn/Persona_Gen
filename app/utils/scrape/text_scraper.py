@@ -25,7 +25,7 @@ def get_user_data(username : str ,limit=1000) :
     comments = []
     for comment in redditor.comments.new(limit=limit) :
         comments.append({
-            "text" : comment,
+            "text" : comment.body,
             "permalink" : f"https://www.reddit.com{comment.permalink}"
         })
     
@@ -37,7 +37,6 @@ def get_user_data(username : str ,limit=1000) :
             "permalink" : f"https://www.reddit.com{post.permalink}"
         })
     return comments, posts
-
 
 
 
