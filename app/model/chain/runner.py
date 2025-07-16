@@ -10,7 +10,7 @@ def run_chain_for_trait(llm, documents, trait_name: str):
     # ---------------------
     #  FACT TRAITS
     # ---------------------
-    if trait_name_lower in ["name", "age", "occupation"]:
+    if trait_name_lower in ["name", "age", "occupation", "status", "location","tier", "Archetype"]:
         print(f"Running fact chain for {trait_name}")
         result = run_fact_chain(llm, documents, trait_name)
         return {
@@ -21,7 +21,7 @@ def run_chain_for_trait(llm, documents, trait_name: str):
     # ---------------------
     #  SUMMARY TRAITS
     # ---------------------
-    elif trait_name_lower in ["4 words", "descriptive", "habits", "goals", "frustrations"]:
+    elif trait_name_lower in ["4-words", "Behavior and Habits", "Goals and Needs", "Frustrations"]:
         print(f" Running summary chain for {trait_name}")
         result = run_summary_chain(llm, documents, trait_name)
         return {
@@ -32,7 +32,7 @@ def run_chain_for_trait(llm, documents, trait_name: str):
     # ---------------------
     #  REFINED TRAITS
     # ---------------------
-    elif trait_name_lower in ["motivations", "personality"]:
+    elif trait_name_lower in ["motivation", "personality"]:
         print(f" Running refine chain for {trait_name}")
         result = run_refine_chain(llm, documents, trait_name_lower)
         return {

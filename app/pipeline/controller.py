@@ -5,7 +5,19 @@ def run_persona_extraction(llm, documents):
     Runs the full pipeline and returns a structured user persona dict.
     """
     trait_groups = [
-        "4 Words"
+        "name", 
+        "age", 
+        "occupation", 
+        "status", 
+        "location",
+        "tier", 
+        "Archetype",
+        "4-words", 
+        "Behavior and Habits", 
+        "Goals and Needs", 
+        "Frustrations",
+        "motivation", 
+        "personality"
     ]
 
     print(" Starting persona extraction...")
