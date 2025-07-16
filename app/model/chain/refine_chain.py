@@ -3,8 +3,8 @@
 from langchain.chains import RefineDocumentsChain
 from langchain.chains.llm import LLMChain
 from langchain.prompts import PromptTemplate
-from model.prompt.motivation_prompt import build_motivation_prompt
-from model.prompt.personality_prompt import build_personality_prompt
+from app.model.prompt.motivation_prompt import build_motivation_prompt
+from app.model.prompt.personality_prompt import build_personality_prompt
 
 def run_refine_chain(llm, documents, category: str):
     if category == "motivation":

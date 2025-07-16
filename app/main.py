@@ -3,7 +3,7 @@ from app.pipeline.loader import extract_username, loader
 from app.pipeline.chunker import chunker
 from app.pipeline.writer import save_persona
 from app.pipeline.controller import run_persona_extraction
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 import os
 
 # load env
