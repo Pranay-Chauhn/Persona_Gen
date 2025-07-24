@@ -92,7 +92,8 @@ Ensure your GitHub repository contains:
 
 
 
-6. Project Workflow
+Project Workflow
+--------------------
 
                              [Chunked Reddit User Data]
                                     Run the main.py
