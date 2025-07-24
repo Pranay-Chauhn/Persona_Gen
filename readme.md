@@ -94,27 +94,32 @@ If you need help setting up, refer to the comments in the code or message us thr
 
 6. Project Workflow
 
-        [Chunked Reddit User Data]
-                       │
-     ┌─────────────────┴───────────────────┐
-     │                                     │
-     ▼                                     ▼
- [Direct Fact Traits]              [Complex Traits (Aggregated)]
-    (e.g. Age, Job)                        │
-     │                                     ▼
-     ▼                            ┌─────────────────────────────┐
-[Top-K Retrieval (RAG)]          │         Descriptive         │
-     │                           │         (MapReduce)         │
-     ▼                           └─────────────────────────────┘
-[LLMChain: Trait Estimator]                  │
-     │                                       ▼
-     └────┐                           ┌────────────┐
-          ▼                           ▼            ▼
-   [Store Fact Trait]     [Motivation Ratings]   [MBTI Personality]
-                                  │                      │
-                                  ▼                      ▼
-                      [RefineDocumentsChain]   [RefineDocumentsChain]
-                                  │                      │
-                                  ▼                      ▼
-                         [Store Motivations]      [Store MBTI Trait]
+                             [Chunked Reddit User Data]
+                                         │
+                            Running the Controller Pipeline
+                        (Including the traits you want to add)
+                                         │
+                            Run the function in Runner.py
+                            (This connects the entire chain)
+                    ┌────────────────────┴────────────────────┐
+                    │                                         │
+                    ▼                                         ▼
+                [Direct Fact Traits]              [Complex Traits (Aggregated)]
+                    (e.g., Age, Job)                            │
+                    │                                         ▼
+                    ▼                             ┌─────────────────────────────┐
+                [Top-K Retrieval (RAG)]           │         Descriptive         │
+                    │                             │         (MapReduce)         │
+                    ▼                             └─────────────────────────────┘
+                [LLMChain: Trait Estimator]                      │
+                    │                                            ▼
+                    └────┐                               ┌──────────────┐
+                         ▼                               ▼              ▼
+                [Store Fact Trait]         [Motivation Ratings]   [MBTI Personality]
+                                                    │                      │
+                                                    ▼                      ▼
+                                    [RefineDocumentsChain]   [RefineDocumentsChain]
+                                                    │                      │
+                                                    ▼                      ▼
+                                        [Store Motivations]      [Store MBTI Trait]
 
