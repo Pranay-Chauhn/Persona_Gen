@@ -5,7 +5,7 @@ Overview:
 ---------
 This script takes a Reddit user profile URL as input, scrapes the user’s comments and posts, and generates a detailed user persona based on that activity. Each trait includes specific references from the user's posts or comments that were used to infer that trait.
 
-The goal is to give a clear picture of the user’s personality, habits, motivations, and more.
+*The goal is to give a clear picture of the user’s personality, habits, motivations, and more.*
 
 ![Project Screenshot](Persona_example.webp)
 
