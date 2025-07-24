@@ -97,9 +97,10 @@ If you need help setting up, refer to the comments in the code or message us thr
 6. Project Workflow
 
                              [Chunked Reddit User Data]
+                                    Run the main.py
                                          │
                              [pipeline/controller.py]
-                           Running the Controller Pipeline
+                           Calls the Controller Pipeline
                        (Including the traits you want to add)
                                          │
                            Calls the function in Chain/Runner.py
