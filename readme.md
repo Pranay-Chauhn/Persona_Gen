@@ -7,6 +7,8 @@ This script takes a Reddit user profile URL as input, scrapes the user’s comme
 
 The goal is to give a clear picture of the user’s personality, habits, motivations, and more.
 
+![Project Screenshot](Persona_example.webp)
+
 Technologies Used:
 ------------------
 - Python
