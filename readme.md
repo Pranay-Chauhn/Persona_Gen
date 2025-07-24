@@ -98,10 +98,11 @@ If you need help setting up, refer to the comments in the code or message us thr
 
                              [Chunked Reddit User Data]
                                          │
-                            Running the Controller Pipeline
-                        (Including the traits you want to add)
+                             [pipeline/controller.py]
+                           Running the Controller Pipeline
+                       (Including the traits you want to add)
                                          │
-                            Run the function in Runner.py
+                           Calls the function in Chain/Runner.py
                             (This connects the entire chain)
                     ┌────────────────────┴────────────────────┐
                     │                                         │
