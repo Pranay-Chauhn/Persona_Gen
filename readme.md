@@ -90,9 +90,7 @@ Ensure your GitHub repository contains:
 - `.env.example` file
 - Sample persona output files (for sample Reddit usernames)
 
-Contact:
---------
-If you need help setting up, refer to the comments in the code or message us through Internshala.
+
 
 6. Project Workflow
 
